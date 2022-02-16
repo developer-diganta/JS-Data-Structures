@@ -1,0 +1,14 @@
+{
+  "name": "js-data-structures",
+  "version": "1.0.0",
+  "description": "A library with various data structure implementations in JavaScript",
+  "main": "Tests.js",
+  "scripts": {
+    "test": "jest --verbose ./Tests"
+  },
+  "author": "Diganta Kr Banik",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
+}
