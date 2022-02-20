@@ -94,6 +94,33 @@ module.exports = class LinkedList{
         return val;
     }
 
+    reverse(){
+        if(this.size===0 || this.head.next === null) return this.head;
+        let curr = this.head;
+        let prev = null;
+        let nxt = this.head.next;
+        while(curr){
+            curr.next=prev;
+            prev=curr;
+            curr=nxt;
+            if(nxt!==null){
+                nxt=nxt.next;
+            }
+        }
+        this.head = prev;
+    }
+
+    has(target){
+     let curr = this.head;
+     while(curr){
+         if(curr.data === target){
+             return true;
+         }
+         curr=curr.next;
+     }
+     return false;
+    }
+
     print(){
         let temp = new Node();
         temp = this.head;
