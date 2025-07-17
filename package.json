@@ -9,6 +9,6 @@
   "author": "Diganta Kr Banik",
   "license": "ISC",
   "dependencies": {
-    "jest": "^27.5.1"
+    "jest": "^30.0.0"
   }
 }
